@@ -3,8 +3,8 @@
  Name: Brendan Jacques, brendan_jacques@student.uml.edu
  Student - Computer Science Major, UMass Lowell
  Comp.4610, GUI Programming I
- File: /usr/cs/2018/bjacques/public_html/461f2017/hw4/js/hw6.js
- Created: 7-November-2017
+ File: /usr/cs/2018/bjacques/public_html/461f2017/hw6/js/hw6.js
+ Created: 31-November-2017
 -->
 */
 

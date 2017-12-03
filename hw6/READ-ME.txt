@@ -1,0 +1,8 @@
+Web Address:
+http://weblab.cs.uml.edu/~bjacques/461f2017/hw5/hw5.html
+
+Github Link:
+https://github.com/Brendan-Jacques/GUI-HW5
+
+Note:
+This assignment uses both the jquery library and the jquery validation plug-in (https://jqueryvalidation.org/).

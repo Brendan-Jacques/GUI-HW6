@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+ Name: Brendan Jacques, brendan_jacques@student.uml.edu
+ Student - Computer Science Major, UMass Lowell
+ Comp.4610, GUI Programming I
+ File: /usr/cs/2018/bjacques/public_html/461f2017/hw6/hw6.html
+ Created: 27-November-2017
+-->
+<html>
+  <head>
+    <title>
+      Assignment 6
+    </title>
+    <link rel="stylesheet" type="text/css" href="./css/hw6.css">
+    <link rel="stylesheet" type="text/css" href="./jquery-ui/jquery-ui.min.css">
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./jquery-validate/dist/jquery.validate.js"></script>
+    <script src="./jquery-ui/jquery-ui.js"></script>
+  </head>
+  <body>
+    <h1>
+      <b>Assignment 6</b>
+    </h1>
+    <div class="center">
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-table">Table Creation</a></li>
+          <li><a href="#tabs-modify">Table Modify</a></li>
+        </ul>
+        <div id="tabs-table">
+          <form id="car-number" onsubmit="field_generate()">
+        	 <div>How many cars do you want to compare? : <input id="input_field_num" name="input_field_num" type="text"></div>
+            <div><input id="field-submit" type="submit" value="Submit"></div>
+          </form>
+          <form id="car-compare-data">
+            <p id="note1" class="note">*Please fill in all required fields.</p>
+            <table id="defaults" class="defaults">
+              <tr>
+                <td>*Price per Gallon:</td> 
+        		    <td><input id="per_gallon" name="per_gallon" type='text' class="data_input"/></td>
+              </tr>
+              <tr>
+                <td>*Expected Miles Per Month:</td> 
+                <td><input id="miles_per_month" name="miles_per_month" type='text' class="data_input"/></td>
+              </tr>
+            </table>
+       	    <p id="note2" class="note">If "Price per Gallon" or "Expected Miles" are not given values, they will default to 0.</p>
+            <table id="fields"></table>
+            <p id="note3" class="note">Note: If any information given about a car is missing or incorrect, that car's data will not appear on the table.<br /></p>
+            <input type="submit" value="Submit" id="submit" class="submit" />
+          </form>
+        </div>
+        <div id="tabs-modify">
+          <form id="tab_delete" onsubmit="deleteTabs()">
+            <div id="tab-deletion"></div>
+            <input type="submit" value="Delete Selected Tabs" />
+          </form>
+          <input type="submit" value="Delete All Tabs" onclick="allTabs()" />
+        </div>
+      </div>
+    </div>
+    <script src="./js/hw6.js"></script>
+    <script src="./js/validation-hw6.js"></script>
+    <script src="./js/query-ui-hw6.js"></script>
+    <script src="./js/tab-hw6.js"></script>
+  </body>
+</html>
